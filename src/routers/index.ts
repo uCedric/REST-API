@@ -6,8 +6,10 @@ import user from './user';
 
 const router = express.Router();
 
-export default (): express.Router => {
+//export default (): express.Router => {
   authentication(router);
   user(router);
-  return router;
-};
+  //return router;
+//};
+
+module.exports = router;
